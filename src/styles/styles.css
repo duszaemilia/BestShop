@@ -11,10 +11,26 @@
     --second5:#FF091129;
     --third:#55DFB4;
     --other:#13253B;
-    --other:#707070;
-    --other:#95989A;
-    --other:#A5A5A5;
-    --other:#00000029;
-    --other:#E8E9ED;
-    --other:#F7F7F7;
+    --other2:#707070;
+    --other3:#95989A;
+    --other4:#A5A5A5;
+    --other5:#00000029;
+    --other6:#E8E9ED;
+    --other7:#F7F7F7;
 }
+
+.header {}
+.header .header__inner {}
+
+.logo {}
+.logo .logo__text {}
+
+.mainMenu {}
+.mainMenu .mainMenu__item {}
+.mainMenu .mainMenu__item .mainMenu_item--active {}
+
+.hero {}
+.hero .hero__hdl {}
+.hero .hero__lead {}
+.hero .hero__btn {}
+.hero .hero__background {}
