@@ -1,36 +1,84 @@
 :root {
-    --white:#ffffff;
+    --white: #ffffff;
     --black: #000000;
-    --primary:#08A6E4;
-    --primary_light:#07ACE6;
-    --primary-light2:#07ACE629;
-    --second:#EB476E;
-    --second2:#FB3B64;
-    --second3:#FB3B64;
-    --second4:#F9043629;
-    --second5:#FF091129;
-    --third:#55DFB4;
-    --other:#13253B;
-    --other2:#707070;
-    --other3:#95989A;
-    --other4:#A5A5A5;
-    --other5:#00000029;
-    --other6:#E8E9ED;
-    --other7:#F7F7F7;
+    --primary: #08A6E4;
+    --primary_light: #07ACE6;
+    --primary-light2: #07ACE629;
+    --second: #EB476E;
+    --second2: #FB3B64;
+    --second3: #FB3B64;
+    --second4: #F9043629;
+    --second5: #FF091129;
+    --third: #55DFB4;
+    --other: #13253B;
+    --other2: #707070;
+    --other3: #95989A;
+    --other4: #A5A5A5;
+    --other5: #00000029;
+    --other6: #E8E9ED;
+    --other7: #F7F7F7;
 }
 
-.header {}
-.header .header__inner {}
+html, body {
+    font-size: 16px;
+}
 
-.logo {}
-.logo .logo__text {}
+.header {
+    background-color: var(--white);
+    box-shadow: 0 .1875rem .375rem var(--other5);
 
-.mainMenu {}
-.mainMenu .mainMenu__item {}
-.mainMenu .mainMenu__item .mainMenu_item--active {}
+}
 
-.hero {}
-.hero .hero__hdl {}
-.hero .hero__lead {}
-.hero .hero__btn {}
-.hero .hero__background {}
+.header .header__inner {
+    width: 100%;
+    max-width: 101.5625rem;
+    margin-inline: auto;
+}
+
+.logo {
+    text-decoration: none;
+    font-family:"Raleway",sans-serif;
+    font-weight: 300;
+    font-size:37px;
+    /*line-height: ;*/
+    color: var(--primary);
+}
+
+.logo .logo__text {
+}
+
+.mainMenu {
+}
+
+.mainMenu .mainMenu__item {
+    color: var(--other4);
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    /*padding: 2.0625rem 2.5rem;*/
+    display: inline-block;
+    /*line-height: 1.375;*/
+}
+
+.mainMenu .mainMenu__item .mainMenu_item--active {
+}
+
+.hero {
+}
+
+.hero .hero__hdl {
+}
+
+.hero .hero__lead {
+}
+
+.hero .hero__btn {
+}
+
+.hero .hero__background {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
