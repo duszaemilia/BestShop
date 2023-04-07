@@ -26,28 +26,36 @@ html, body {
 .header {
     background-color: var(--white);
     box-shadow: 0 .1875rem .375rem var(--other5);
-
+    height: 4.375rem;
 }
 
 .header .header__inner {
     width: 100%;
-    max-width: 101.5625rem;
-    margin-inline: auto;
+    max-width: 84.5rem;
+    margin-inline: 0 auto;
+    /*padding-inline: 1rem;*/
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
 }
 
 .logo {
     text-decoration: none;
-    font-family:"Raleway",sans-serif;
+    font-family: "Raleway", sans-serif;
     font-weight: 300;
-    font-size:37px;
+    font-size: 2rem;
     /*line-height: ;*/
     color: var(--primary);
+    display: flex;
+    align-items: center;
 }
 
 .logo .logo__text {
 }
 
 .mainMenu {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .mainMenu .mainMenu__item {
@@ -55,25 +63,58 @@ html, body {
     text-decoration: none;
     font-family: 'Open Sans', sans-serif;
     font-weight: 700;
+    font-size: 0.6875rem;
     text-transform: uppercase;
-    /*padding: 2.0625rem 2.5rem;*/
+    padding: 1.75rem 1.125rem 1.375rem;
+    border-bottom: 0.25rem solid transparent;
     display: inline-block;
     /*line-height: 1.375;*/
 }
 
 .mainMenu .mainMenu__item .mainMenu_item--active {
+    color: var(--black);
+    border-color: var(--primary);
 }
 
 .hero {
 }
 
 .hero .hero__hdl {
+    font-family: "Raleway Regular", sans-serif;
+    font-size: 3.0625rem;
+    font-weight: 500;
+    color: var(--black);
+    display: flex;
+    justify-content: center;
+    margin-top: 12.5rem;
 }
 
 .hero .hero__lead {
+    font-size: 1rem;
+    line-height: 1.375;
+    font-weight: 500;
+    color: var(--black);
+    font-family: "Open Sans", sans-serif;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 38px;
+    display: flex;
+    justify-content: center;
 }
 
 .hero .hero__btn {
+    text-decoration: none;
+    color: white;
+    font-weight: 700;
+    padding: 16px 65px;
+    border-radius: 40px;
+    border: none;
+    background: #08A6E4 0% 0% no-repeat padding-box;
+    box-shadow: 5px 10px 14px #07ACE629;
+    display: flex;
+    justify-content: center;
+    /*margin: 38px 593px 0 593px;*/
+
 }
 
 .hero .hero__background {
