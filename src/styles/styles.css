@@ -70,13 +70,19 @@ html, body {
     display: inline-block;
     /*line-height: 1.375;*/
 }
-
-.mainMenu .mainMenu__item .mainMenu_item--active {
+.mainMenu .mainMenu__item:hover {
     color: var(--black);
     border-color: var(--primary);
 }
 
+.mainMenu .mainMenu__item .mainMenu_item--active {
+
+}
+
 .hero {
+    display: flex;
+    flex-direction: column;
+   align-items: center;
 }
 
 .hero .hero__hdl {
@@ -109,10 +115,10 @@ html, body {
     padding: 16px 65px;
     border-radius: 40px;
     border: none;
-    background: #08A6E4 0% 0% no-repeat padding-box;
+    background: #08A6E4 0 0 no-repeat padding-box;
     box-shadow: 5px 10px 14px #07ACE629;
-    display: flex;
-    justify-content: center;
+    display: inline-block;
+
     /*margin: 38px 593px 0 593px;*/
 
 }
