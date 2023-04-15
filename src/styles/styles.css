@@ -38,12 +38,11 @@ html, body {
     height: 4.375rem;
 }
 
-.header .header__inner {
+.header__inner {
     width: 100%;
     max-width: 84.5rem;
     margin-inline: 0 auto;
     /*padding-inline: 1rem;*/
-    box-sizing: border-box;
     display: flex;
     justify-content: space-between;
 }
@@ -76,8 +75,11 @@ html, body {
     text-transform: uppercase;
     padding: 1.75rem 1.125rem 1.375rem;
     border-bottom: 0.25rem solid transparent;
-    display: inline-block;
-    /*line-height: 1.375;*/
+    /*display: inline-block;*/
+    letter-spacing: 0.1875rem;
+   }
+.mainMenu .mainMenu__item:last-child {
+    padding-right: 0;
 }
 
 .mainMenu .mainMenu__item:hover {
@@ -99,7 +101,7 @@ html, body {
     font-size: 3.0625rem;
     font-weight: 500;
     color: var(--black);
-    margin-top: 12.5rem;
+    margin-top: 8.125rem;
 }
 
 .hero .hero__lead {
@@ -134,15 +136,19 @@ html, body {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    height: auto;
 }
 
+.statistics {
+    margin-top: 6.25rem;
+}
 .statistics__inner {
     margin: 0 auto;
-    width: 1352px;
+    max-width: 50rem;
 }
 
 .statistics__title {
-    font-size: 36px;
+    font-size: 2.25rem;
     line-height: 42px;
     font-family: "Raleway", sans-serif;
     font-weight: 500;
@@ -152,8 +158,8 @@ html, body {
 }
 
 .cols {
-    max-width: 800px;
-    margin: 100px auto 121px;
+    max-width: 50rem;
+    margin: 6.25rem auto 7.5625rem;
     display: flex;
     justify-content: space-between;
 }
@@ -173,13 +179,13 @@ html, body {
     font-weight: 800;
     font-size: 1.25rem;
     letter-spacing: 0.1875rem;
-    margin-top: 13px;
+    margin-top: 0.8125rem;
 }
 
 .statistics__lead {
     font-size: 1.0625rem;
     color: var(--other4);
-    margin-top: 19px;
+    margin-top: 1.1875rem;
 }
 
 .statistics__circle1 {
