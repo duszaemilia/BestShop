@@ -19,10 +19,17 @@
     --other7: #F7F7F7;
 }
 
+
+* {
+    box-sizing: border-box;
+}
 html, body {
     font-size: 16px;
 }
-
+.container {
+    margin: 0 auto;
+    width: 1352px;
+}
 .header {
     background-color: var(--white);
     box-shadow: 0 .1875rem .375rem var(--other5);
