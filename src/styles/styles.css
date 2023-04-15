@@ -152,27 +152,34 @@ html, body {
 }
 
 .cols {
+    max-width: 800px;
+    margin: 100px auto 121px;
     display: flex;
     justify-content: space-between;
 }
 
 .statistics__cols {
-    width: 100px;
+    max-width: 160px;
+    font-family: "Raleway", sans-serif;
     text-align: center;
-    position: relative;
-}
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+}
 
 
 .statistics__hdl {
-    font-family: "Raleway", sans-serif;
-    font-weight: 700;
-    font-size: 20px;
+    font-weight: 800;
+    font-size: 1.25rem;
+    letter-spacing: 0.1875rem;
+    margin-top: 13px;
 }
 
 .statistics__lead {
-    font-size: 17px;
+    font-size: 1.0625rem;
     color: var(--other4);
+    margin-top: 19px;
 }
 
 .statistics__circle1 {
@@ -182,10 +189,11 @@ html, body {
     border-radius: 50%;
     position: relative;
 }
+
 .statistics__img1 {
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 45%;
 
 }
 
@@ -196,12 +204,14 @@ html, body {
     border-radius: 50%;
     position: relative;
 }
+
 .statistics__img2 {
     position: absolute;
     top: 15px;
     left: 45%;
 
 }
+
 .statistics__circle3 {
     width: 63px;
     height: 63px;
@@ -209,6 +219,7 @@ html, body {
     border-radius: 50%;
     position: relative;
 }
+
 .statistics__img3 {
     position: absolute;
     top: 8px;
