@@ -270,7 +270,7 @@ html, body {
     content: "";
     width: 328px;
     height: 4px;
-    background-color: var(--second2);
+    background-color: var(--accent-color);
     display: block;
     margin-top: 50px;
 }
@@ -295,7 +295,7 @@ html, body {
     content: "";
     width: 180px;
     height: 180px;
-    background-color: var(--second2);
+    background-color: var(--accent-color);
     display: block;
     border-radius: 40px;
     position: absolute;
@@ -322,7 +322,7 @@ html, body {
     content: "";
     width: 320px;
     height: 320px;
-    background-color: var(--primary);
+    background-color: var(--accent-color);
     display: block;
     border-radius: 50%;
     position: absolute;
@@ -362,7 +362,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: var(--third);
+    background-color: var(--accent-color);
     border: none;
     margin-left: 60px;
 }
