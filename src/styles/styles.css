@@ -232,3 +232,143 @@ html, body {
     left: 50%;
 
 }
+
+.benefits {
+    padding: 100px 0;
+    background-color: var(--other7);
+}
+.benefits__container {
+    padding: 0 100px;
+}
+
+.benefits__article {
+    background-color: var(--white);
+    border: 1px solid var(--other6);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 37px;
+    border-radius: 5px;
+}
+
+.benefits__content {
+    box-sizing: content-box;
+    max-width: 415px;
+    margin: 90px 36px;
+}
+.benefits__hdl {
+    font-size: 2.25rem;
+    font-family: "Raleway",sans-serif;
+}
+.benefits__lead {
+    font-family: "Open Sans",sans-serif;
+    font-size: 1rem;
+    margin-top: 30px;
+    line-height: 1.375rem;
+}
+.benefits__content::after {
+    content: "";
+    width: 328px;
+    height: 4px;
+    background-color: var(--second2);
+    display: block;
+    margin-top: 50px;
+}
+
+.benefits__img {
+    position: relative;
+}
+
+.benefits__img img {
+    position: relative;
+    z-index: 2;
+}
+.benefits__article--square {
+    --accent-color: var(--second2);
+}
+.benefits__article--square .benefits__img {
+    margin-right: 117px;
+    margin-bottom: 38px;
+}
+
+.benefits__article--square .benefits__img::before {
+    content: "";
+    width: 180px;
+    height: 180px;
+    background-color: var(--second2);
+    display: block;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    top: -40px;
+    transform: rotate(45deg);
+}
+
+.benefits__article--square .benefits__img img {
+    width: 386px;
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+
+.benefits__article--circle {
+    --accent-color: var(--primary);
+    flex-direction: row-reverse;
+    padding: 0 20px 0 70px;
+}
+
+.benefits__article--circle .benefits__img::before {
+    content: "";
+    width: 320px;
+    height: 320px;
+    background-color: var(--primary);
+    display: block;
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: -20px;
+}
+
+.benefits__article--circle .benefits__img img {
+    width: 426px;
+    height: auto;
+}
+
+.benefits__article--circle .benefits__content {
+    margin: 70px 0;
+}
+
+.benefits__double {
+    --accent-color: var(--third);
+    display: flex;
+}
+
+.benefits__double > div {
+    margin-bottom: 0;
+}
+
+.benefits__article--solo {
+    max-width: 620px;
+}
+
+.benefits__article--solo .benefits__content {
+    max-width: none;
+    margin: 70px 35px;
+}
+
+.benefits__article--image {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--third);
+    border: none;
+    margin-left: 60px;
+}
+
+.benefits__article--img img {
+    width: 295px;
+    height: auto;
+    margin-top: 55px;
+}
