@@ -1,2 +1,10 @@
 .idea
 .vscode
+
+dist
+.parcel-cache
+node_modules/
+.sass-cache/
+
+package.json
+package-lock.json

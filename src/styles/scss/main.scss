@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500,800&display=swap');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import "generic/reset";
+@import "settings/index";
+@import "grid";
+
+@import "settings/mixins";
+@import "elements/header";
+@import "elements/hero";
+@import "elements/statistics";
+@import "elements/benefits";
+
+
+//body {
+//  font-family: 'Open Sans', sans-serif;
+//  background: #E4E4E4;
+//  color: #444444;
+//}
