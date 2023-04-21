@@ -1,34 +1,3 @@
-$font-raleway: "Raleway", sans-serif;
-$font-open-sans: "Open Sans", sans-serif;
-$white: #ffffff;
-$black: #000000;
-$primary: #08A6E4;
-$primary_light: #07ACE6;
-$primary-light2: #07ACE629;
-$second: #EB476E;
-$second2: #FB3B64;
-$second3: #F9043629;
-$second5: #FF091129;
-$third: #55DFB4;
-$other: #13253B;
-$other2: #707070;
-$other3: #95989A;
-$other4: #A5A5A5;
-$other5: #00000029;
-$other6: #E8E9ED;
-$other7: #F7F7F7;
-@mixin notebook {
-  @media (max-width: 1352px) {
-    @content;
-  }
-}
-
-@mixin mobile {
-  @media (max-width: 792px) {
-    @content;
-  }
-}
-
 .hero {
   background-color: $white;
   display: flex;
@@ -88,10 +57,10 @@ $other7: #F7F7F7;
       width: 100%;
       height: auto;
 
-      @include mobile {
-        width: 200%;
-        transform: translateX(-28%);
-      }
+      //@include mobile {
+      //  width: 200%;
+      //  transform: translateX(-28%);
+      //}
     }
   }
 }

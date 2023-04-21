@@ -1,0 +1,22 @@
+
+@import "generic/reset";
+
+@import "grid";
+
+@import "settings/fonts";
+@import "settings/colors";
+@import "settings/mixins";
+
+
+@import "elements/base";
+@import "elements/benefits";
+@import "elements/header";
+@import "elements/hero";
+@import "elements/statistics";
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #E4E4E4;
+  color: #444444;
+}

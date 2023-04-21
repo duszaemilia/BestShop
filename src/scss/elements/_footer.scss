@@ -1,0 +1,53 @@
+
+.footer {
+  background-color: $white;
+  box-shadow: 0 -0.3125rem 2.5rem $other4;
+  margin-top: 3.6875rem;
+
+  .footer__info{
+
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+
+    .footer__left {
+
+      .logo {
+        font-family: $font-raleway;
+        color: $primary;
+        font-size: 1.625rem;
+        line-height: 1.1538;
+        font-weight: 300;
+        letter-spacing: 0;
+        margin: 0;
+        padding: 1.25rem 0 0.4375rem 0;
+      }
+
+      .copyright {
+        font-family: $font-open-sans;
+        font-size: 0.6875rem;
+        line-height: 1.3636;
+        font-weight: 500;
+        color: $other2;
+        margin: 0;
+        padding: 0 0 1.0625rem 0;
+      }
+    }
+
+    .footer__right {
+      display: flex;
+      align-self: center;
+      column-gap: 1.25rem;
+
+      .logo__icons {
+        display: block;
+      }
+    }
+  }
+}
+
+
+
+
+
