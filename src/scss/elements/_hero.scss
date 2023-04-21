@@ -24,6 +24,7 @@
     font-weight: 500;
     color: $black;
     font-family: $font-open-sans;
+    //display: block;
     align-items: center;
     margin-top: 20px;
     margin-bottom: 38px;
@@ -57,10 +58,10 @@
       width: 100%;
       height: auto;
 
-      //@include mobile {
-      //  width: 200%;
-      //  transform: translateX(-28%);
-      //}
+      @include mobile {
+        width: 200%;
+        transform: translateX(-28%);
+      }
     }
   }
 }
