@@ -1,0 +1,97 @@
+$font-raleway: "Raleway", sans-serif;
+$font-open-sans: "Open Sans", sans-serif;
+$white: #ffffff;
+$black: #000000;
+$primary: #08A6E4;
+$primary_light: #07ACE6;
+$primary-light2: #07ACE629;
+$second: #EB476E;
+$second2: #FB3B64;
+$second3: #F9043629;
+$second5: #FF091129;
+$third: #55DFB4;
+$other: #13253B;
+$other2: #707070;
+$other3: #95989A;
+$other4: #A5A5A5;
+$other5: #00000029;
+$other6: #E8E9ED;
+$other7: #F7F7F7;
+@mixin notebook {
+  @media (max-width: 1352px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 792px) {
+    @content;
+  }
+}
+
+.hero {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+
+
+  .hero__hdl {
+    font-family: $font-raleway;
+    font-size: 3.0625rem;
+    font-weight: 500;
+    color: $black;
+    margin-top: 8.125rem;
+
+    @include mobile {
+      margin-top: 6.25rem;
+    }
+  }
+
+  .hero__lead {
+    font-size: 1rem;
+    line-height: 1.375;
+    font-weight: 500;
+    color: $black;
+    font-family: $font-open-sans;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 38px;
+
+    @include mobile {
+      padding: 0 70px;
+    }
+  }
+
+  .hero__btn {
+    text-decoration: none;
+    color: $white;
+    font-weight: 700;
+    padding: 16px 65px;
+    border-radius: 40px;
+    border: none;
+    background: $primary;
+    display: inline-block;
+    font-family: $font-open-sans;
+    /*margin: 38px 593px 0 593px;*/
+
+    @include mobile {
+      .btn {
+        margin: 0 15px;
+        padding: 16px 0;
+        display: block;
+      }
+    }
+
+    .hero__background {
+      width: 100%;
+      height: auto;
+
+      @include mobile {
+        width: 200%;
+        transform: translateX(-28%);
+      }
+    }
+  }
+}

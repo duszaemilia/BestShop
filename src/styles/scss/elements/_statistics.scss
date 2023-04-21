@@ -1,0 +1,149 @@
+$font-raleway: "Raleway", sans-serif;
+$font-open-sans: "Open Sans", sans-serif;
+$white: #ffffff;
+$black: #000000;
+$primary: #08A6E4;
+$primary_light: #07ACE6;
+$primary-light2: #07ACE629;
+$second: #EB476E;
+$second2: #FB3B64;
+$second3: #F9043629;
+$second5: #FF091129;
+$third: #55DFB4;
+$other: #13253B;
+$other2: #707070;
+$other3: #95989A;
+$other4: #A5A5A5;
+$other5: #00000029;
+$other6: #E8E9ED;
+$other7: #F7F7F7;
+@mixin notebook {
+  @media (max-width: 1352px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 792px) {
+    @content;
+  }
+}
+
+.statistics {
+  margin-top: 6.25rem;
+  background-color: $white;
+
+  @include mobile {
+    margin-top: 3.125rem;
+  }
+
+
+  .statistics__inner {
+    margin: 0 auto;
+    max-width: 50rem;
+
+
+    .statistics__title {
+      font-size: 2.25rem;
+      line-height: 42px;
+      font-family: $font-raleway;
+      font-weight: 500;
+      text-align: center;
+      color: $black;
+
+      @include mobile {
+        align-items: center;
+      }
+
+    }
+
+    .cols {
+      max-width: 50rem;
+      margin: 6.25rem auto 7.5625rem;
+      display: flex;
+      justify-content: space-between;
+
+      @include mobile {
+        margin: 35px auto 50px;
+        align-items: center;
+        flex-direction: column;
+      }
+
+
+      .statistics__cols {
+        max-width: 160px;
+        font-family: $font-raleway;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include mobile {
+          margin-bottom: 35px;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+
+        .statistics__hdl {
+          font-weight: 800;
+          font-size: 1.25rem;
+          letter-spacing: 0.1875rem;
+          margin-top: 0.8125rem;
+        }
+
+        .statistics__lead {
+          font-size: 1.0625rem;
+          color: $other4;
+          margin-top: 1.1875rem;
+        }
+
+        .statistics__circle1 {
+          width: 63px;
+          height: 63px;
+          background-color: $second2;
+          border-radius: 50%;
+          position: relative;
+        }
+
+        .statistics__img1 {
+          position: absolute;
+          top: 0;
+          left: 45%;
+
+        }
+
+        .statistics__circle2 {
+          width: 63px;
+          height: 63px;
+          background-color: $primary;
+          border-radius: 50%;
+          position: relative;
+        }
+
+        .statistics__img2 {
+          position: absolute;
+          top: 15px;
+          left: 45%;
+
+        }
+
+        .statistics__circle3 {
+          width: 63px;
+          height: 63px;
+          background-color: $third;
+          border-radius: 50%;
+          position: relative;
+        }
+
+        .statistics__img3 {
+          position: absolute;
+          top: 8px;
+          left: 50%;
+        }
+
+      }
+    }
+  }
+}
