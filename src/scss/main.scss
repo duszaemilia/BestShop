@@ -13,10 +13,13 @@
 @import "elements/header";
 @import "elements/hero";
 @import "elements/statistics";
-
+@import "elements/pricing";
+@import "elements/contact";
+@import "elements/form";
+@import "elements/footer";
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: #E4E4E4;
-  color: #444444;
+  background: $white;
+  color: $last;
 }
