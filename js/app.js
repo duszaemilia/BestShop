@@ -1,6 +1,6 @@
 
 function updateSummary() {
-//zdefiniowanie cen
+// Zdefiniowanie cen
    const prices = {
         products: 0.5,
         orders: 0.25,
@@ -57,11 +57,11 @@ function updateSummary() {
         // Ustaw odpowiednią cenę dla wybranego pakietu
         let packagePrice = 0;
         if (packageValue === 'basic') {
-            packagePrice = `$${prices.package.basic}`;
+            packagePrice = `${prices.package.basic}`;
         } else if (packageValue === 'professional') {
-            packagePrice = `$${prices.package.professional}`;
+            packagePrice = `${prices.package.professional}`;
         } else if (packageValue === 'premium') {
-            packagePrice = `$${prices.package.premium}`;
+            packagePrice = `${prices.package.premium}`;
         }
         packageSummaryItem.querySelector('.item__price').innerText = `$${packagePrice}`;
     } else {
@@ -146,29 +146,41 @@ numberInputs.forEach((input) => {
 
 // Obsługa zmiany wartości dropdown
 const packageDropdown = document.getElementById('package');
-const selectInput = packageDropdown.querySelector('.select__input');
-const selectDropdown = packageDropdown.querySelector('.select__dropdown');
+const selectInput = document.querySelector('.select__input');
+const selectDropdown = document.querySelector('#dropdown1');
 
 // Funkcja obsługująca wybór wartości z dropdown
-function handleDropdownChange(selectedValue) {
+function dropdownChange(selectedValue) {
     selectInput.innerText = selectedValue;
     selectDropdown.classList.remove('open');
     packageDropdown.dataset.value = selectedValue;
     updateSummary();
 }
 
-selectInput.addEventListener('click', () => {
-    selectDropdown.classList.add('open');
-    selectDropdown.style.display = 'block';
-    // selectDropdown.classList.toggle('open');
+//NIE DZIAŁA!!!! NIE DODAJE SIE KLASA OPEN
+selectInput.addEventListener('click', function () {
+    // selectDropdown.classList.add('open');
+    // selectDropdown.style.display = 'block';
+    selectDropdown.classList.toggle('open');
+    console.log ("zyje");
 });
 
-// Dodajmy obsługę kliknięcia na elementy dropdown
+
+// selectInput.addEventListener('click', () => {
+//     if (selectDropdown.classList.contains('open')) {
+//         selectDropdown.classList.remove('open');
+//     } else {
+//         selectDropdown.classList.add('open');
+//     }
+// });
+
+
+//Obsługa kliknięcia na elementy dropdown
 const selectItems = packageDropdown.querySelectorAll('.select__dropdown li');
 selectItems.forEach((item) => {
     item.addEventListener('click', () => {
         const selectedValue = item.getAttribute('data-value');
-        handleDropdownChange(selectedValue);
+        dropdownChange(selectedValue);
     });
 });
 
@@ -181,25 +193,6 @@ document.addEventListener('click', (event) => {
 });
 
 
-
-
-// // Obsługa zmiany wartości dropdown inny sposób
-// const packageDropdown = document.querySelector('#package');
-// const selectInput = packageDropdown.querySelector('.select__input');
-// const selectDropdown = packageDropdown.querySelector('.select__dropdown');
-// const selectItems = packageDropdown.querySelectorAll('.select__dropdown li');
-// selectInput.addEventListener('click', () => {
-//     selectDropdown.classList.toggle('open');
-// });
-// selectItems.forEach((item) => {
-//     item.addEventListener('click', () => {
-//         const selectedValue = item.getAttribute('data-value');
-//         selectInput.innerText = item.innerText;
-//         selectDropdown.classList.remove('open');
-//         packageDropdown.dataset.value = selectedValue;
-//         updateSummary();
-//     });
-// });
 
 
 // Obsługa zmiany stanu checkboxów
