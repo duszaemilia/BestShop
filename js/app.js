@@ -162,7 +162,7 @@ selectInput.addEventListener('click', function () {
     // selectDropdown.classList.add('open');
     // selectDropdown.style.display = 'block';
     selectDropdown.classList.toggle('open');
-    console.log ("zyje");
+    // console.log ("zyje");
 });
 
 
