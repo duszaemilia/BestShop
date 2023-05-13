@@ -157,13 +157,28 @@ function dropdownChange(selectedValue) {
     updateSummary();
 }
 
-//NIE DZIAŁA!!!! NIE DODAJE SIE KLASA OPEN
+// //NIE DZIAŁA!!!! NIE DODAJE SIE KLASA OPEN
+// selectInput.addEventListener('click', function () {
+//     // selectDropdown.classList.add('open');
+//     // selectDropdown.style.display = 'block';
+//     selectDropdown.classList.toggle('open');
+//     // selectDropdown.style.display = 'block';
+//     // console.log ("zyje");
+// });
+
+let opened = false;
+
+//DZIAŁA!!!! DODAJE SIE KLASA OPEN sposob hardcore
 selectInput.addEventListener('click', function () {
-    // selectDropdown.classList.add('open');
-    // selectDropdown.style.display = 'block';
-    selectDropdown.classList.toggle('open');
-    // console.log ("zyje");
+    if (opened) {
+        opened = false;
+        selectDropdown.style.display = 'none';
+    } else {
+        opened = true;
+        selectDropdown.style.display = 'block';
+    }
 });
+
 
 
 // selectInput.addEventListener('click', () => {
